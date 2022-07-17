@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:srcCompat="@drawable/logo"
+        android:layout_weight="50"/>
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_weight="9"
+        android:hint= "@string/email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/icono_usuario"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="9"
+        android:drawableLeft="@drawable/icono_contrasenia"
+        android:drawableRight="@drawable/icono_ojo"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/ingresar"
+        android:layout_weight="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="120dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrar"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/registro"
+        android:layout_weight="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="100dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recuperar"
+        android:gravity="center"/>
+</LinearLayout>

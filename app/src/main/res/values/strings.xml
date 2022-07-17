@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Proyecto_Movil</string>
+    <string name="email">E-mail</string>
+    <string name="password">Contraseña</string>
+    <string name="ingresar">Iniciar Sesión</string>
+    <string name="registro">Registrarme</string>
+    <string name="registrar">¿No tienes cuenta en MIDA Pets?</string>
+    <string name="recuperar">Recuperar contraseña olvidada</string>
 </resources>
