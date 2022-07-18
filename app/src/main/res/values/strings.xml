@@ -6,4 +6,7 @@
     <string name="registro">Registrarme</string>
     <string name="registrar">¿No tienes cuenta en MIDA Pets?</string>
     <string name="recuperar">Recuperar contraseña olvidada</string>
+    <string name="anuncio">Nuevo anuncio</string>
+    <string name="anuncio_descripcion">Escoje la opcion que se ajuste a lo que quieres anunciar</string>
+
 </resources>
