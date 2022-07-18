@@ -20,7 +20,9 @@ class RegistroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityResgistroBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
+        title = "Registro"
         var nombre=""
         var correo=""
         var password=""
