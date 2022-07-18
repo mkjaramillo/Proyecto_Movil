@@ -18,6 +18,9 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.buttonRegistro.setOnClickListener{
+            startActivity(Intent(this,RegistroActivity::class.java))
+        }
         setUp()
     }
 
@@ -40,6 +43,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
         }
+
     }
 
     private fun showAlert(){

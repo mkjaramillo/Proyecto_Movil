@@ -1,57 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/fondo2"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/idNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre y Apllido" />
+            android:layout_margin="10dp"
+            android:text="Nombre y Apellido"
+            android:textColor="@color/black"
+            android:textColorHighlight="#0C0C0C"
+            android:textColorLink="#D076DF"
+            android:textSize="16sp"
+            app:drawableTint="#06000B" />
 
         <EditText
             android:id="@+id/idNombreL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
+            android:hint="Nombre completo"
             android:inputType="textPersonName"
-            />
+            android:shadowColor="#9C27B0"
+            android:textColorHighlight="#9C27B0"
+            android:textColorHint="#917895"
+            android:textColorLink="#9C27B0" />
 
         <TextView
             android:id="@+id/idCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E-mail" />
+            android:layout_margin="10dp"
+            android:text="E-mail"
+            android:textColor="@color/black"
+            android:textColorHighlight="#090909"
+            android:textColorLink="#D076DF"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/idCorreoL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:hint="Correo electrónico"
+            android:inputType="textPersonName"
+            android:textColorHighlight="#9C27B0"
+            android:textColorHint="#917895"
+            android:textColorLink="#9C27B0" />
 
         <TextView
             android:id="@+id/IdPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contraseña" />
+            android:layout_margin="10dp"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:textColorHighlight="#090909"
+            android:textColorLink="#D076DF"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/idPaswordL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHighlight="#9C27B0"
+            android:textColorHint="#917895"
+            android:textColorLink="#9C27B0" />
 
         <Button
             android:id="@+id/idCrearCuenta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:text="Crear cuenta" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
