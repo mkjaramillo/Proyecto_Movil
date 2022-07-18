@@ -13,7 +13,7 @@ class AnuncioActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAnuncioBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+//probando commit con mile
         ShowInitItem()
 
     }
