@@ -1,14 +1,11 @@
 package com.example.proyecto_movil
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyecto_movil.databinding.ActivityLoginBinding
-
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -46,6 +43,16 @@ class LoginActivity : AppCompatActivity() {
 
             }
         }
+
+        binding.recuperarContraseA.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
+
+        }
+
+
+
+
+
     }
 /*
     public override fun onStart() {
@@ -55,6 +62,7 @@ class LoginActivity : AppCompatActivity() {
             reload()
         }
     }*/
+
 
     private fun singIn(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
