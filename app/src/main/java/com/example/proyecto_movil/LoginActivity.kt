@@ -1,7 +1,10 @@
 package com.example.proyecto_movil
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyecto_movil.databinding.ActivityLoginBinding
@@ -9,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
+    private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,46 +20,58 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.buttonRegistro.setOnClickListener{
-            startActivity(Intent(this,RegistroActivity::class.java))
+        binding.buttonRegistro.setOnClickListener {
+            startActivity(Intent(this, RegistroActivity::class.java))
         }
-        setUp()
-    }
-
-    private fun setUp() {
-        title = "Autenticación"
 
         binding.buttonIngresar.setOnClickListener {
-            //falta comprobar que los datos sean correctos!!!!!!!!!!!!!!!!!
-            if (binding.editTextUser.text.isNotEmpty()
-                && binding.editTextPassword.text.isNotEmpty()
-            ) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                    binding.editTextUser.toString(), binding.editTextPassword.toString()
-                ).addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        showHome()
-                    } else {
-                        showAlert()
-                    }
+            val mEmail = binding.editTextUser.text.toString()
+            val mPassword = binding.editTextPassword.text.toString()
+
+            when {
+                binding.editTextUser.text.isEmpty() || binding.editTextPassword.text.isEmpty() -> {
+                    Toast.makeText(
+                        baseContext, "Correo o contraseña incorrectos.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
+                else -> {
+                    singIn(mEmail, mPassword)
+                }
+
             }
+        }
+    }
+
+    private fun singIn(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                Log.d(TAG, "signInWithEmail:success")
+                reload()
+
+            } else {
+                Log.w(TAG, "signInWithEmail:failure", task.exception)
+                Toast.makeText(
+                    baseContext, "Authentication failed",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+            }
+
         }
 
     }
 
-    private fun showAlert(){
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
-        builder.setMessage("Error de autenticación")
-        builder.setPositiveButton("Aceptar",null)
-        val dialog: AlertDialog= builder.create()
-        dialog.show()
+    private fun reload(){
+        super.onStart()
+        val currentUser = auth.currentUser
+        if( currentUser != null){
+            reload()
+        }
     }
 
-    private fun showHome(){
-      val homeIntent= Intent(this, HomeActivity::class.java).apply {
-      }
+    private fun showHome() {
+        val homeIntent = Intent(this, HomeActivity::class.java)
         startActivity(homeIntent)
     }
 }
