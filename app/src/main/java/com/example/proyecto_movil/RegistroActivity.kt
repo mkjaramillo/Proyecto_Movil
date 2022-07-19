@@ -49,24 +49,38 @@ class RegistroActivity : AppCompatActivity() {
 
         auth.createUserWithEmailAndPassword(c,p).addOnCompleteListener { task ->
             if(task.isSuccessful){
-                var id= auth.currentUser!!.uid
-                var hashMap : HashMap<String, String>
-                        = HashMap<String,String> ()
-                hashMap.put("name" , n)
-                hashMap.put("correo" , c)
-                hashMap.put("password" ,p )
 
-                database.child("Users").child(id).setValue(hashMap).addOnCompleteListener { task2 ->
-                    if(task2.isSuccessful){
-                        startActivity(Intent(this,LoginActivity::class.java))
-                        finish()
+                auth.currentUser!!.sendEmailVerification().addOnCompleteListener { ver ->
+                    if (ver.isSuccessful) {
+                        Toast.makeText(applicationContext, "Correo de verificación enviado a: " + c,Toast.LENGTH_LONG).show()
 
-                    }else{
-                        Toast.makeText(applicationContext,"No se pudo crear los datos correctamente",Toast.LENGTH_LONG).show()
+
+                        var id= auth.currentUser!!.uid
+                        var hashMap : HashMap<String, String>
+                                = HashMap<String,String> ()
+                        hashMap.put("name" , n)
+                        hashMap.put("correo" , c)
+                        hashMap.put("password" ,p )
+
+                        database.child("Users").child(id).setValue(hashMap).addOnCompleteListener { task2 ->
+                            if(task2.isSuccessful){
+                                startActivity(Intent(this,LoginActivity::class.java))
+                                finish()
+
+                            }else{
+                                Toast.makeText(applicationContext,"No se pudo crear los datos correctamente",Toast.LENGTH_LONG).show()
+                            }
+                        }.addOnFailureListener { exception ->
+                            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+                        }
                     }
-                }.addOnFailureListener { exception ->
-                    Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+
+
+
                 }
+
+
+
 
             }
         }.addOnFailureListener { exception ->
