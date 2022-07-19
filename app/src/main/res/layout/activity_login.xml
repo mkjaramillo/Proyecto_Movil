@@ -12,72 +12,72 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:srcCompat="@drawable/logo"
-        android:layout_weight="50"/>
+        android:layout_marginTop="16dp"
+        android:layout_weight="50"
+        tools:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/editTextUser"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_weight="9"
-        android:hint= "@string/email"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_weight="25"
         android:drawableLeft="@drawable/icono_usuario"
         android:drawablePadding="10dp"
-        android:layout_marginBottom="15dp"
-        />
-
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_weight="9"
-        android:drawableLeft="@drawable/icono_contrasenia"
-        android:drawableRight="@drawable/icono_ojo"
-        android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="15dp"/>
+        android:hint="@string/email"
+        android:inputType="textPersonName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:passwordToggleEnabled="true">
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:drawableLeft="@drawable/icono_contrasenia"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/buttonIngresar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="20"
         android:text="@string/ingresar"
-        android:layout_weight="10"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="120dp"
 
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/registrar"
-        android:gravity="center"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistro" />
 
     <Button
         android:id="@+id/buttonRegistro"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="20"
         android:text="@string/registro"
-        android:layout_weight="10"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="100dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/recuperar"
-        android:gravity="center"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
+
+
 </LinearLayout>

@@ -8,7 +8,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyecto_movil.databinding.ActivityLoginBinding
+
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
 
@@ -17,9 +20,11 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = Firebase.auth
+
         binding.buttonRegistro.setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java))
         }
@@ -42,36 +47,37 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
+/*
+    public override fun onStart() {
+        super.onStart()
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            reload()
+        }
+    }*/
 
     private fun singIn(email: String, password: String) {
-        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
-            if (task.isSuccessful) {
-                Log.d(TAG, "signInWithEmail:success")
-                reload()
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Log.d("TAG", "signInWithEmail:success")
+                    reload()
 
-            } else {
-                Log.w(TAG, "signInWithEmail:failure", task.exception)
-                Toast.makeText(
-                    baseContext, "Authentication failed",
-                    Toast.LENGTH_SHORT
-                ).show()
+                } else {
+                    Log.w("TAG", "signInWithEmail:failure", task.exception)
+                    Toast.makeText(
+                        baseContext, "Correo o contraseña incorrectos",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                }
 
             }
 
-        }
-
     }
 
-    private fun reload(){
-        super.onStart()
-        val currentUser = auth.currentUser
-        if( currentUser != null){
-            reload()
-        }
-    }
-
-    private fun showHome() {
-        val homeIntent = Intent(this, HomeActivity::class.java)
+    private fun reload() {
+        val homeIntent = Intent(this, MainActivity::class.java)
         startActivity(homeIntent)
     }
 }
