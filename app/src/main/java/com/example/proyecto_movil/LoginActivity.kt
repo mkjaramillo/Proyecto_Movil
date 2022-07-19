@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyecto_movil.databinding.ActivityAnuncioBinding
-
 import com.example.proyecto_movil.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 

@@ -38,7 +38,7 @@ class InfoMascotaActivity : AppCompatActivity(){
         val adapter = ArrayAdapter(this, R.layout.list_detalle,listaDetalles)
 
         //binding.autoCompleteDetalles.isClickable=true
-        with(binding.autoCompleteDetalles){
+        with(binding.autoCompleteDetalle){
             setAdapter(adapter)
            // onItemClickListener = this@InfoMascotaActivity
         }
