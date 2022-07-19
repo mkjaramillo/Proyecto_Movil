@@ -52,8 +52,7 @@
         android:layout_height="0dp"
         android:layout_weight="20"
         android:text="@string/ingresar"
-
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        />
 
     <TextView
         android:id="@+id/textView2"
@@ -61,7 +60,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/registrar"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegistro" />
+       />
 
     <Button
         android:id="@+id/buttonRegistro"
@@ -69,15 +68,16 @@
         android:layout_height="0dp"
         android:layout_weight="20"
         android:text="@string/registro"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/recuperarContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/recuperar"
-        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
+        android:clickable="true"
+        android:onClick="clickTextView"/>
 
 
 </LinearLayout>
