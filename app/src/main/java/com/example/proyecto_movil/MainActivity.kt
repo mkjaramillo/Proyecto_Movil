@@ -7,7 +7,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-
+/*
     private lateinit var binding:com.example.proyecto_movil.databinding.ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, RegistroActivity::class.java))
 
         }
-    }
+    }*/
 
 }
