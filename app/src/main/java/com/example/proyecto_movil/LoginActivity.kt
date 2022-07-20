@@ -85,7 +85,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun reload() {
-        val homeIntent = Intent(this, MainActivity::class.java)
-        startActivity(homeIntent)
+        if(auth.currentUser!!.isEmailVerified){
+            val homeIntent = Intent(this, MainActivity::class.java)
+            startActivity(homeIntent)
+        }else{
+            Toast.makeText(applicationContext, "Verifique su correo",Toast.LENGTH_LONG).show()
+
+        }
+
     }
 }
