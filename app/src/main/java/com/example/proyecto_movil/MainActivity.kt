@@ -12,13 +12,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
 
-        binding = com.example.proyecto_movil.databinding.ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_list_item)
 
-        binding.ESTE.setOnClickListener {
-            startActivity(Intent(this, RegistroActivity::class.java))
-
-        }
     }
 
 }

@@ -8,5 +8,7 @@
     <string name="recuperar">Recuperar contraseña olvidada</string>
     <string name="anuncio">Nuevo anuncio</string>
     <string name="anuncio_descripcion">Escoje la opcion que se ajuste a lo que quieres anunciar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
