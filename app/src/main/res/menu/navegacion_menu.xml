@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idMap"
+        android:title="Mapa" />
+    <item
+        android:id="@+id/principal"
+        android:title="Principal" />
+    <item
+        android:id="@+id/busc"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/perf"
+        android:title="perfil" />
+    <item
+        android:id="@+id/info"
+        android:title="informacion" />
+</menu>
