@@ -47,5 +47,15 @@
         app:srcCompat="@drawable/cursor"
         />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/idNavegacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemRippleColor="#000000"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_botton_navigation"  />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

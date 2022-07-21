@@ -1,24 +1,27 @@
 package com.example.proyecto_movil
 
-import android.R
 import android.content.Intent
-import android.os.Bundle
-
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.proyecto_movil.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-/*
-    private lateinit var binding:com.example.proyecto_movil.databinding.ActivityMainBinding
+    private lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState);
-
-        binding = com.example.proyecto_movil.databinding.ActivityMainBinding.inflate(layoutInflater)
+        super.onCreate(savedInstanceState)
+        binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.idNavegacion.setOnItemSelectedListener {
+            when(it.itemId){
 
-        binding.ESTE.setOnClickListener {
-            startActivity(Intent(this, RegistroActivity::class.java))
+                R.id.idMapa->{
+                    startActivity(Intent(this,MapaActivity::class.java))
+                    true}
 
+                else->false
+
+
+            }
         }
-    }*/
-
+    }
 }

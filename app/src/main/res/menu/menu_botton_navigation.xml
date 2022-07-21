@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/Mapa"
-        android:icon="@drawable/iconMapa"
+        android:id="@+id/idMapa"
+        android:icon="@drawable/icon_mapa"
         android:title="Mapa" />
     <item
-        android:id="@+id/Buscar"
-        android:icon="@drawable/iconLupa"
+        android:id="@+id/idBuscar"
+        android:icon="@drawable/icon_lupa"
         android:title="Buscar" />
     <item
-        android:id="@+id/Home"
-        android:icon="@drawable/iconCasa"
+        android:id="@+id/idHome"
+        android:icon="@drawable/icon_casa"
         android:title="Home" />
     <item
-        android:id="@+id/Usuario"
+        android:id="@+id/idUsuario"
         android:icon="@drawable/icono_usuario"
         android:title="Usuario" />
 
     <item
-        android:id="@+id/Info"
-        android:icon="@drawable/iconInfo"
+        android:id="@+id/idInfo"
+        android:icon="@drawable/icon_info"
         android:title="Información" />
 
 </menu>

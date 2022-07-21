@@ -1,6 +1,7 @@
 package com.example.proyecto_movil
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
@@ -41,8 +42,21 @@ class MapaActivity : AppCompatActivity(),OnMapReadyCallback {
         }
 
         setContentView(binding.root)
+        binding.idNavegacion.setOnItemSelectedListener {
+            when (it.itemId) {
 
-        createFragment()
+                R.id.idHome -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+
+                else -> false
+
+
+            }
+        }
+
+            createFragment()
 
     }
 
