@@ -6,9 +6,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyecto_movil.databinding.ActivityResgistroBinding
 import com.example.proyecto_movil.utils.DataBaseInstance
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import java.util.*
 import kotlin.collections.HashMap
@@ -16,19 +18,19 @@ import kotlin.collections.HashMap
 class RegistroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResgistroBinding
     private lateinit var  auth: FirebaseAuth
-    private lateinit var  database: DatabaseReference
+    private lateinit var  database: FirebaseFirestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityResgistroBinding.inflate(layoutInflater)
+       setContentView(binding.root)
 
-        setContentView(binding.root)
         title = "Registro"
         var nombre=""
         var correo=""
         var password=""
         auth= DataBaseInstance.getDatabaseAuth()
-        database= DataBaseInstance.getDataBaseReference()
-        binding.idCrearCuenta.setOnClickListener(){
+        database=DataBaseInstance.getDataBaseFireStore()
+       binding.idCrearCuenta.setOnClickListener(){
             nombre=binding.idNombreL.text.toString()
             correo=binding.idCorreoL.text.toString()
             password=binding.idPaswordL.text.toString()
@@ -62,9 +64,11 @@ class RegistroActivity : AppCompatActivity() {
                         hashMap.put("correo" , c)
                         hashMap.put("password" ,p )
 
-                        database.child("Users").child(id).setValue(hashMap).addOnCompleteListener { task2 ->
+                        database.collection("Users").document(c).set(hashMap).addOnCompleteListener { task2 ->
                             if(task2.isSuccessful){
                                 startActivity(Intent(this,LoginActivity::class.java))
+                                Toast.makeText(applicationContext,"verique su correo",Toast.LENGTH_LONG).show()
+
                                 finish()
 
                             }else{
