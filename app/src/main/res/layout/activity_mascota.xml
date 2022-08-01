@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MascotaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/emailTx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="E-mail"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añade fotos"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imagenMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/tituloMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce un título breve"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/descripcionMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción (opcional)"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de animal"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/tipoMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escoje un tipo de animal"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raza"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/razaMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Introduce la raza"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/sexoMacho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Macho"
+                    app:srcCompat="@drawable/custom_button1" />
+
+                <ImageButton
+                    android:id="@+id/sexoHembra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Hembra"
+                    app:srcCompat="@drawable/custom_button" />
+
+                <ImageButton
+                    android:id="@+id/sexoNoSe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Nose"
+                    app:srcCompat="@drawable/custom_button2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuándo ha sucedido?"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/textFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@android:drawable/ic_menu_edit"
+                android:hint="Fecha Automatica de Hoy .__." />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿En qué zona se ha perdido?"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/textZona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@android:drawable/ic_menu_edit"
+                android:hint="Zona Automatica .__." />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teléfono de contacto"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/telefonoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono para contactar"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnPublicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publicar" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

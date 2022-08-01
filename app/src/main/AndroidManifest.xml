@@ -4,8 +4,8 @@
     package="com.example.proyecto_movil">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".utils.DataBaseInstance"
@@ -18,13 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_Movil"
         tools:targetApi="31">
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key"
-        />
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MascotaActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
@@ -43,6 +48,3 @@
     </application>
 
 </manifest>
-
-
-

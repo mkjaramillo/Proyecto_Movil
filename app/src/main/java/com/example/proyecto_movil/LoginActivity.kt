@@ -69,7 +69,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d("TAG", "signInWithEmail:success")
-                    reload()
+                    reload(email)
 
                 } else {
                     Log.w("TAG", "signInWithEmail:failure", task.exception)
@@ -84,9 +84,10 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    private fun reload() {
+    private fun reload(email:String) {
         if(auth.currentUser!!.isEmailVerified){
             val homeIntent = Intent(this, MainActivity::class.java)
+            homeIntent.putExtra("email",email)
             startActivity(homeIntent)
         }else{
             Toast.makeText(applicationContext, "Verifique su correo",Toast.LENGTH_LONG).show()
