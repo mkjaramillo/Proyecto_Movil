@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.ListView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.fragment_anunciar.view.*
-import kotlinx.android.synthetic.main.item_anuncio.view.*
 
 class AnunciarFragment : Fragment() {
 

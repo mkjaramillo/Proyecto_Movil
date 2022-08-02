@@ -60,10 +60,3 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.5.1")
 
 }
-
-
-
-
-dependencies {
-    implementation 'com.google.firebase:firebase-database-ktx:20.0.5'
-}

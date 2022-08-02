@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val bundle= intent.extras
         val userMail = bundle?.getString("email")
         Toast.makeText(this,userMail, Toast.LENGTH_SHORT).show()
-        binding.textView.text= userMail
+       // binding.textView.text= userMail
 
         binding.idNavegacion.setOnItemSelectedListener {
             when(it.itemId){
