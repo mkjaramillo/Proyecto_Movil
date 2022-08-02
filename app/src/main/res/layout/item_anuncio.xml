@@ -4,25 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:padding="15dp">
 
-
     <TextView
-        android:id="@+id/titulo"
+        android:id="@+id/tituloAnuncio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="150dp" />
 
     <TextView
-        android:id="@+id/descA"
+        android:id="@+id/descripAnuncio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAnuncio"
+        tools:layout_editor_absoluteX="159dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

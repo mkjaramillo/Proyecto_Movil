@@ -1,31 +1,24 @@
 package com.example.proyecto_movil
 
-import android.app.Activity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.TextView
+import kotlinx.android.synthetic.main.item_anuncio.view.*
 
-class AnuncioAdapter(
-    private val context: Activity,
-    private val arrayList: List<Anuncio>
-) :
-    ArrayAdapter<Anuncio>(context, R.layout.activity_anuncio, arrayList) {
-
+class AnuncioAdapter(private val nContext: Context, private val listaAnuncio: List<Anuncio>) :
+    ArrayAdapter<Anuncio>(nContext, 0, listaAnuncio) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val inflater: LayoutInflater = LayoutInflater.from(context)
-        val view: View = inflater.inflate(R.layout.list_anuncio, null)
+        val layout = LayoutInflater.from(nContext).inflate(R.layout.item_anuncio,parent,false)
 
-        val titulo: TextView = view.findViewById(R.id.titulo)
-        val contenido: TextView = view.findViewById(R.id.descA)
+        val anuncio = listaAnuncio[position]
 
-        titulo.text =arrayList[position].titulo
-        contenido.text= arrayList[position].contenido
+        layout.tituloAnuncio.text = anuncio.titulo
+        layout.descripAnuncio.text = anuncio.contenido
 
-        return view
-
+        return layout
     }
-}
 
+}

@@ -9,19 +9,29 @@
         <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil/app/src/main/res/layout/activity_login.xml" value="0.19701086956521738" />
         <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil/app/src/main/res/layout/list_anuncio.xml" value="0.19701086956521738" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/activity_anuncio.xml" value="0.25" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/activity_mapa.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/activity_publicacio_completa.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/buton.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/estilo_lista.xml" value="0.22" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/fragment_buscar.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/fragment_informacion.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/fragment_principal.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/layout/fragment_usuario.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/menu/menu_botton_navigation.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil3/app/src/main/res/menu/navegacion_menu.xml" value="0.203125" />
+        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil5/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil5/app/src/main/res/layout/activity_mapa.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil5/app/src/main/res/menu/menu_botton_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Milena Jaramillo/AndroidStudioProjects/Proyecto_Movil5/app/src/main/res/menu/navegacion_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/drawable/custom_botton.xml" value="0.1" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/drawable/custom_button1.xml" value="0.3595" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/drawable/custom_button2.xml" value="0.3595" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_detalle.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_info_mascota.xml" value="0.23275862068965517" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_login.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_main.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_mapa.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_mascota.xml" value="0.3509259259259259" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_recuperar.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/activity_resgistro.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/fragment_anunciar.xml" value="0.22291021671826625" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/fragment_calendario.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/fragment_home.xml" value="0.346875" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/item_anuncio.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/list_anuncio.xml" value="0.3067708333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/list_detalle.xml" value="0.10416666666666667" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecto_Movil2/app/src/main/res/layout/list_detalle2.xml" value="0.3067708333333333" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity.xml" value="0.2942708333333333" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_anuncio.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_detalle.xml" value="0.3854166666666667" />
@@ -29,6 +39,7 @@
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_info_mascota.xml" value="0.48735632183908045" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_login.xml" value="0.2942708333333333" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_main.xml" value="0.2942708333333333" />
+        <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_recuperar.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/activity_resgistro.xml" value="0.1" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/list_anuncio.xml" value="0.27870370370370373" />
         <entry key="..\:/Users/Usuario/Desktop/Disp.Moviles/Proyecyo_Movil/app/src/main/res/layout/list_detalle.xml" value="0.3802083333333333" />

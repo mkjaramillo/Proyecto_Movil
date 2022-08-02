@@ -1,3 +1,7 @@
 package com.example.proyecto_movil
 
-class Anuncio(var titulo: String, var contenido: String)
+import java.io.Serializable
+
+class Anuncio(var titulo: String, var contenido: String) : Serializable
+
+

@@ -12,14 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MapaActivity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-221dp">
+        tools:layout_editor_absoluteX="-170dp"
+        tools:layout_editor_absoluteY="0dp">
 
 
     </androidx.fragment.app.FragmentContainerView>
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerAnuncioView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@+id/idNavegacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/botonPata"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@null"
@@ -56,6 +68,16 @@
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_botton_navigation"  />
+
+    <TextView
+        android:id="@+id/textE"
+        android:layout_width="61dp"
+        android:layout_height="15dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/containerAnuncioView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

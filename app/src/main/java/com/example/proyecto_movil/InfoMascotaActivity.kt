@@ -7,11 +7,12 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.example.proyecto_movil.databinding.ActivityInfoMascotaBinding
+import kotlinx.android.synthetic.main.activity_info_mascota.*
 
 class InfoMascotaActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityInfoMascotaBinding
-    private lateinit var listaDetalles : List<Detalle>
+    private lateinit var listaDetalles : List<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,29 +25,14 @@ class InfoMascotaActivity : AppCompatActivity(){
 
     private fun showItem() {
 
-        val opc1= Detalle("Tipo: ", "")
-        val opc2= Detalle("Raza: ", "")
-        val opc3= Detalle("Sexo: ", "")
-        val opc4= Detalle("Pelo: ", "")
-        val opc5= Detalle("Ojos: ", "")
-        val opc6= Detalle("Chip: ", "")
-        val opc7= Detalle("Collar: ", "")
 
-
-        listaDetalles = listOf(opc1,opc2,opc3,opc4,opc5,opc6,opc7)
+        listaDetalles = listOf(
+            "Tipo: ------------",
+            "Raza: ------------",
+            "Sexo: ------------")
 
         val adapter = ArrayAdapter(this, R.layout.list_detalle,listaDetalles)
-
-        //binding.autoCompleteDetalles.isClickable=true
-        with(binding.autoCompleteDetalle){
-            setAdapter(adapter)
-           // onItemClickListener = this@InfoMascotaActivity
-        }
-
+        binding.autoCompleteDetalle.setAdapter(adapter)
     }
 
-    //override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-      //  val item = parent?.getItemAtPosition(position).toString()
-       // Toast.makeText(this@InfoMascotaActivity,item,Toast.LENGTH_SHORT).show()
-   // }
 }

@@ -1,3 +1,4 @@
+
 package com.example.proyecto_movil.adapters
 
 import android.view.LayoutInflater

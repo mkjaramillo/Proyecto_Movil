@@ -79,13 +79,7 @@ class RegistroActivity : AppCompatActivity() {
                         }
                     }
 
-
-
                 }
-
-
-
-
             }
         }.addOnFailureListener { exception ->
             Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
